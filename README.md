@@ -8,15 +8,15 @@ This microservice return the Unix and UTC formatted timestamps with input of:
     - Date string with spaces (05%20October%202011)
 
 These are returned in JSON form 
-```JSON 
+```json 
 {
-    unix: "Timestamp in unix",
-    utc: "Timestamp in UTC"
+    "unix": "Timestamp in unix",
+    "utc": "Timestamp in UTC"
 }
 ```
 
 If the date is invalid in any way, an error in JSON format is returned: 
-```JSON
+```json
 {
     error: "Invalid Date"
 }
