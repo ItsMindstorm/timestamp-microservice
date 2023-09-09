@@ -26,12 +26,12 @@ app.get("/api/:date", function(req, res) {
 
 	if (date.length == 13) {
 		res.json({
-			unix: date,
+			unix: parseInt(date),
 			utc: new Date(Number(date)).toUTCString(),
 		});
 	} else if (date.length == 10 && isNaN(Date.parse(date)) === false) {
 		res.json({
-			unix: new Date(date).valueOf(),
+			unix: parseInt(new Date(date).valueOf()),
 			utc: new Date(date).toUTCString(),
 		});
 	} else {

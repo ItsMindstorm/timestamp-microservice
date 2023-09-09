@@ -4,15 +4,17 @@
   "description": "An FCC Backend Challenge",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
-	"engines": {
-		"node": "20"
-	},
+  "engines": {
+    "node": "20"
+  },
   "dependencies": {
     "cors": "^2.8.0",
     "dotenv": "^16.3.1",
-    "express": "^4.12.4"
+    "express": "^4.12.4",
+    "nodemon": "^3.0.1"
   },
   "repository": {
     "type": "git",
