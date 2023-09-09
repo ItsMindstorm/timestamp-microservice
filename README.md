@@ -18,7 +18,7 @@ These are returned in JSON form
 If the date is invalid in any way, an error in JSON format is returned: 
 ```json
 {
-    error: "Invalid Date"
+    "error": "Invalid Date"
 }
 ```
 
